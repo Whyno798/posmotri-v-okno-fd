@@ -84,7 +84,6 @@ ol {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: start;
   gap: 40px;
-  height: 54px;
 }
 
 .search-form__checkbox-list {
@@ -171,7 +170,6 @@ ol {
 }
 
 .title {
-  height: 210px;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
   font-size: 75px;
@@ -193,7 +191,7 @@ ol {
 .content__list-container {
   position: relative;
   height: 298px;
-  overflow-y: scroll;
+  overflow: auto;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -228,7 +226,7 @@ ol {
   background-color: #545050;
 }
 
-.content__card-link_current:active {
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -260,8 +258,8 @@ ol {
 }
 
 .content__list-item {
-  border-left: 3px;
-  border-right: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .content__video-card-thumbnail {
